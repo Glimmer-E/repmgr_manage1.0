@@ -1,0 +1,8 @@
+2018-11-21 16:18:41.209 CST [9350] FATAL:  could not access file "pg_stat_statements": No such file or directory
+2018-11-21 16:18:41.209 CST [9350] LOG:  database system is shut down
+LOG:  redirecting log output to logging collector process
+HINT:  Future log output will appear in directory "pg_log".
+FATAL:  could not load library "/usr/local/postgre9.5.5/lib/postgresql/repmgr.so": /usr/local/postgre9.5.5/lib/postgresql/repmgr.so: undefined symbol: GetNamedLWLockTranche
+FATAL:  could not load library "/usr/local/postgre9.5.5/lib/postgresql/repmgr.so": /usr/local/postgre9.5.5/lib/postgresql/repmgr.so: undefined symbol: GetNamedLWLockTranche
+FATAL:  could not load library "/usr/local/postgre9.5.5/lib/postgresql/repmgr.so": /usr/local/postgre9.5.5/lib/postgresql/repmgr.so: undefined symbol: GetNamedLWLockTranche
+FATAL:  could not access file "pg_stat_statements": No such file or directory

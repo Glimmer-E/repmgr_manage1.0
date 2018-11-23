@@ -1,0 +1,25 @@
+opera_type = 5                     ## 1. install pg       2. init db              3. install repmgr
+                                   ## 4. repmgr clone     5. repmgr switchover
+                                   ## 6. repmgr failover  7. repmgr rejoin
+
+ip = 192.168.110.52                     ## 指定需要操作的主机IP地址
+hostname = v52_h1_xy
+os_user = postgres
+os_port = 22
+
+
+;DB模块安装参数
+db_user = 'postgres'
+db_version = 9.5.5                  ## 指定数据库版本号，安装数据库时使用该参数
+db_data = /data1/melotpay          ## 数据库安装路径
+db_port = 1924                     ##  数据库安装端口号
+
+;repmgr模块安装参数
+
+repmgr_version = 4.2.0                   ## 指定repmgr版本号，搭建repmgr时使用
+standby_host = v52_h1_xy:192.168.110.52                 ## 指定主库IP，需要搭建主备时使用
+primary_host = v55_h2_xy:192.168.110.55    ## 指定备库IP，需要搭建主备时使用
+repmgr_file = repmgr.conf
+node_id = 2                                ## 指定node_id
+standby_data = /data1/melotpay
+configure_pri = n
